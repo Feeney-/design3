@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Aprender como um Tema de Design</title>
-  <meta name="description" content="Podes lembrar-te de publicidade para um serviço de empresas que têm características como um cano de água, atado num nó, à volta da cabeça duma pessoa. Uma go...">
+  <title>Notes</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
 
   <link rel="stylesheet" href="/design3//css/main.css">
-  <link rel="canonical" href="http://feeney-.github.io//design3//jekyll/update/2014/12/05/aprender-como-um-tema-de-design%20-%20C%C3%B3pia.html">
+  <link rel="canonical" href="http://feeney-.github.io//design3//notes/">
   <link rel="alternate" type="application/atom+xml" title="Design III" href="http://feeney-.github.io//design3//feed.xml" />
 
       <!-- Angular.JS -->
@@ -95,20 +96,23 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="post">
+        <script src="/design3//js/notes.js"></script>
 
-  <header class="post-header">
-    <h1 class="post-title">Aprender como um Tema de Design</h1>
-    <p class="post-meta">Dec 5, 2014</p>
-  </header>
+<div class="home" ng-controller="notesController">
 
-  <article class="post-content">
-    <p>Podes lembrar-te de publicidade para um serviço de empresas que têm características como um cano de água, atado num nó, à volta da cabeça duma pessoa. Uma gota de água solitária que saí da ponta aberta do cano. A metáfora visual da publicidade e texto acompanhantes eram acerca da renovação de informação para dentro da nossa cabeça, um bocado como encher um balde.</p>
+  <h3>Notes ([[{ notes.length }]])</h3>
 
-<p>Pensamento cano-e-balde premia a politica que tem a ver com aprender e educação. O governo britânico até está a contruir uma “Grelha Nacional de Aprender” Isso vai conectar todas as escolas à internet. É uma excelente política metafórica - Conhecimento para todos, tal como água ou eletrecidade. Mas é um modelo ultrapassado de aprender. Aprender é complexo, social e um processo multidimêncional que não se empresta para ser mandado do cano abaixo-por exemplo, dum website. Conhecimento, perceber, sabedoria-ou “contexto,” se me permitirem-são qualidades desenvolvidas com tempo. Não é uma coisa que é enviada.</p>
+  	<div>
+	  <div class="note" ng-repeat="note in notes">
+	  	[[{ note.text }]]
+	  	<div ng-show="user.email" class="removeNote glyphicon glyphicon-remove" ng-click="removeNote(note.id)"></div>
+	  </div>
 
-  </article>
-
+	  <div class="note new-note" ng-show="user.email">
+	  	<textarea class="new-note-textarea" type="text" placeholder="new note" ng-model="newNote"></textarea>
+	  	<button class="btn btn-primary" ng-click="addNote()">Add</button>
+	  </div>
+	</div>
 </div>
 
       </div>

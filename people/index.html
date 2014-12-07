@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Aprender como um Tema de Design</title>
-  <meta name="description" content="Podes lembrar-te de publicidade para um serviço de empresas que têm características como um cano de água, atado num nó, à volta da cabeça duma pessoa. Uma go...">
+  <title>People</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
 
   <link rel="stylesheet" href="/design3//css/main.css">
-  <link rel="canonical" href="http://feeney-.github.io//design3//jekyll/update/2014/12/05/aprender-como-um-tema-de-design%20-%20C%C3%B3pia.html">
+  <link rel="canonical" href="http://feeney-.github.io//design3//people/">
   <link rel="alternate" type="application/atom+xml" title="Design III" href="http://feeney-.github.io//design3//feed.xml" />
 
       <!-- Angular.JS -->
@@ -95,19 +96,43 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="post">
+        <script src="/design3//js/people.js"></script>
 
-  <header class="post-header">
-    <h1 class="post-title">Aprender como um Tema de Design</h1>
-    <p class="post-meta">Dec 5, 2014</p>
-  </header>
+<div class="home" ng-controller="customersController">
 
-  <article class="post-content">
-    <p>Podes lembrar-te de publicidade para um serviço de empresas que têm características como um cano de água, atado num nó, à volta da cabeça duma pessoa. Uma gota de água solitária que saí da ponta aberta do cano. A metáfora visual da publicidade e texto acompanhantes eram acerca da renovação de informação para dentro da nossa cabeça, um bocado como encher um balde.</p>
+  <h3>People ([[{ customers.length }]])</h3>
 
-<p>Pensamento cano-e-balde premia a politica que tem a ver com aprender e educação. O governo britânico até está a contruir uma “Grelha Nacional de Aprender” Isso vai conectar todas as escolas à internet. É uma excelente política metafórica - Conhecimento para todos, tal como água ou eletrecidade. Mas é um modelo ultrapassado de aprender. Aprender é complexo, social e um processo multidimêncional que não se empresta para ser mandado do cano abaixo-por exemplo, dum website. Conhecimento, perceber, sabedoria-ou “contexto,” se me permitirem-são qualidades desenvolvidas com tempo. Não é uma coisa que é enviada.</p>
 
-  </article>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name &nbsp;&nbsp;<input type="text" placeholder="filter" ng-model="filter"></input></th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th ng-show="user.email">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="customer in customers | filter:filter">
+        <td>[[{ customer.id }]]</td>
+        <td>[[{ customer.name }]]</td>
+        <td>[[{ customer.email }]]</td>
+        <td>[[{ customer.phone }]]</td>
+        <td ng-show="user.email" ng-click="removeCustomer(customer.id)">
+          <div class="glyphicon glyphicon-remove" title="DELETE"></div>
+        </td>
+      </tr>
+      <tr ng-show="user.email">
+        <td></td>
+        <td><input type="text" ng-model="newCustomerName" placeholder="add new..."></input></td>
+        <td><input type="text" ng-model="newCustomerEmail" ng-show="newCustomerName" placeholder="add new..."></input></td>
+        <td><input type="text" ng-model="newCustomerPhone" ng-show="newCustomerName" placeholder="add new..."></input></td>
+        <td><button class="btn btn-primary" ng-click="addCustomer()" ng-show="newCustomerName && newCustomerEmail && newCustomerPhone">add</button></td>
+      </tr>
+    </tbody>
+  </table>
+
 
 </div>
 
