@@ -6,14 +6,28 @@
 </description>
     <link>http://feeney-.github.io//design3//</link>
     <atom:link href="http://feeney-.github.io//design3//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Dec 2014 14:28:04 +0000</pubDate>
-    <lastBuildDate>Sun, 07 Dec 2014 14:28:04 +0000</lastBuildDate>
+    <pubDate>Sun, 07 Dec 2014 15:02:26 +0000</pubDate>
+    <lastBuildDate>Sun, 07 Dec 2014 15:02:26 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
         <title>Ponto da Situação</title>
-        <description>&lt;p&gt;Foi acrescentado ao rodapé do website uma forma de deixar comentários acerca do progresso do trabalho&lt;/p&gt;
-</description>
+        <description>Foi acrescentado ao rodapé do website uma forma de deixar comentários acerca do progresso do trabalho.
+
+Informação útil:
+
+&lt;a href=&quot;http://www.hitl.washington.edu/artoolkit/download/&quot;&gt;AR toolkit (software de realidade aumentada para Linux, PC &amp; Mac)&lt;/a&gt;
+
+
+&lt;h3&gt;Realidade aumentada sem programar.&lt;/h3&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/StcIkMpzVfY&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;h3&gt;Realidade Aumentada para web&lt;/h3&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/jU6PcBS1pWw&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;AR APPS.&lt;/h3&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/NqUSfjTSLyo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</description>
         <pubDate>Sun, 07 Dec 2014 11:24:45 +0000</pubDate>
         <link>http://feeney-.github.io//design3//jekyll/update/2014/12/07/sumario1.html</link>
         <guid isPermaLink="true">http://feeney-.github.io//design3//jekyll/update/2014/12/07/sumario1.html</guid>
